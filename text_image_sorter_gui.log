@@ -1,0 +1,954 @@
+2025-03-18 21:32:36,444 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\1images.jpg
+2025-03-18 21:32:36,586 - INFO - Text detection results for 1images.jpg: chars=34, ratio=0.0006724417546774258, threshold=0.0001
+2025-03-18 21:32:36,586 - INFO - Sample text found: i.e
+&) p,
+Aa 1
+NY 8)
+4 AMeoTenserrWeleen
+S.
+2025-03-18 21:32:36,587 - INFO - Moved 1images.jpg to C:/Users/Kana/Desktop/test Bilder Text\1images.jpg
+2025-03-18 21:32:36,588 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\2Unbenannt.png
+2025-03-18 21:32:36,738 - INFO - Text detection results for 2Unbenannt.png: chars=80, ratio=0.001589825119236884, threshold=0.0001
+2025-03-18 21:32:36,738 - INFO - Sample text found: oBezeSemanticensis
+SeneMofaLarce
+resuksins2SeQRCHiis=
+voreotnteSdattoitsinfornation
+2025-03-18 21:32:36,739 - INFO - Moved 2Unbenannt.png to C:/Users/Kana/Desktop/test Bilder Text\2Unbenannt.png
+2025-03-18 21:32:36,771 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\bugatti_la_voiture_noire.jpg
+2025-03-18 21:32:37,136 - INFO - Text detection results for bugatti_la_voiture_noire.jpg: chars=94, ratio=4.533179012345679e-05, threshold=0.0001
+2025-03-18 21:32:37,136 - INFO - Sample text found: a3 = ae Zz
+4 eis wen sop eae
+
+ee ees 4 ae ee web b I @ ae ge 224 fgg Pee? os 2 a a tile
+
+S= Eo = 2 3
+2025-03-18 21:32:37,168 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\bugatti_veyron.jpg
+2025-03-18 21:32:37,568 - INFO - Text detection results for bugatti_veyron.jpg: chars=129, ratio=6.221064814814815e-05, threshold=0.0001
+2025-03-18 21:32:37,568 - INFO - Sample text found: See, a oe
+Ss Saat Be y. ete sees So a cae ero ee ait fica vile . eee rs oo = ee. a ie .
+es a pew eee
+2025-03-18 21:32:37,600 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\cadillac_xts_royale.jpg
+2025-03-18 21:32:37,970 - INFO - Text detection results for cadillac_xts_royale.jpg: chars=60, ratio=2.8935185185185186e-05, threshold=0.0001
+2025-03-18 21:32:37,970 - INFO - Sample text found: Se Ce
+
+2. hovel snip pert
+
+Sian aoe
+
+ea SS Gg gee i ae er gs Regge ait Lt ee 2S
+a Pp -
+2025-03-18 21:32:38,039 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\cars_contact.jpg
+2025-03-18 21:32:38,634 - INFO - Text detection results for cars_contact.jpg: chars=229, ratio=9.015180146132527e-05, threshold=0.0001
+2025-03-18 21:32:38,634 - INFO - Sample text found: i ti a cee ere . = ee aie 3 iy
+ee S s eens ed,
+a3 nen a ooeate.peeeetemaat)k= ae r ih = =t,) aod
+Spo
+2025-03-18 21:32:38,641 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\Circle_Cars.png
+2025-03-18 21:32:38,764 - INFO - Text detection results for Circle_Cars.png: chars=0, ratio=0.0, threshold=0.0001
+2025-03-18 21:32:38,764 - INFO - Sample text found: 
+2025-03-18 21:32:38,768 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\Circle_Cars_400x400.png
+2025-03-18 21:32:38,880 - INFO - Text detection results for Circle_Cars_400x400.png: chars=0, ratio=0.0, threshold=0.0001
+2025-03-18 21:32:38,880 - INFO - Sample text found: 
+2025-03-18 21:32:38,887 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\Circle_Cars_w.png
+2025-03-18 21:32:39,017 - INFO - Text detection results for Circle_Cars_w.png: chars=5, ratio=1.9061779226473e-05, threshold=0.0001
+2025-03-18 21:32:39,017 - INFO - Sample text found: Sligo
+2025-03-18 21:32:39,048 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\ferrari_f12_tdf.jpg
+2025-03-18 21:32:39,507 - INFO - Text detection results for ferrari_f12_tdf.jpg: chars=140, ratio=6.751543209876543e-05, threshold=0.0001
+2025-03-18 21:32:39,507 - INFO - Sample text found: .
+
+SAgeSisen FeswreeiFta,
+
+eS es Nicene *
+Seat, geeie
+S2eeeeeeietcieetl nay RmyBeeOPgS
+PaaeGiuahPADT
+2025-03-18 21:32:39,538 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\ferrari_gtc4_lusso.jpg
+2025-03-18 21:32:39,845 - INFO - Text detection results for ferrari_gtc4_lusso.jpg: chars=38, ratio=1.8325617283950617e-05, threshold=0.0001
+2025-03-18 21:32:39,845 - INFO - Sample text found: =. Gs a Bits Wire Pigsat
+= S ase Sesoue&e SS in ET
+2025-03-18 21:32:39,876 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\ferrari_laferrari.jpg
+2025-03-18 21:32:40,342 - INFO - Text detection results for ferrari_laferrari.jpg: chars=145, ratio=6.99266975308642e-05, threshold=0.0001
+2025-03-18 21:32:40,342 - INFO - Sample text found: * SSeS BereSetee- oS ie ZLB
+Sea eemeteeeelapaetPoe ile Hite lig
+z oer.(-a OS Gamo E = BIN a? oe os S
+2025-03-18 21:32:40,508 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\home_audi.jpg
+2025-03-18 21:32:41,875 - INFO - Text detection results for home_audi.jpg: chars=669, ratio=0.00012098524305555556, threshold=0.0001
+2025-03-18 21:32:41,875 - INFO - Sample text found: - zs reas a = ar Ree e se a eid ee a he * a 64h
+" a eae 3 a x a
+ee 3 eye yoo tee. Meo , ar se A fae
+2025-03-18 21:32:41,876 - INFO - Moved home_audi.jpg to C:/Users/Kana/Desktop/test Bilder Text\home_audi.jpg
+2025-03-18 21:32:41,958 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\home_bentley.jpg
+2025-03-18 21:32:42,318 - INFO - Text detection results for home_bentley.jpg: chars=53, ratio=1.3802083333333333e-05, threshold=0.0001
+2025-03-18 21:32:42,318 - INFO - Sample text found: cd
+vi Wa q)ee ed a j Yo N
+i Gun suit i N i
+Hea Nasaceneme eee a oo Do SS df
+2025-03-18 21:32:42,320 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\images.jpg
+2025-03-18 21:32:42,469 - INFO - Text detection results for images.jpg: chars=57, ratio=0.0011326378539493294, threshold=0.0001
+2025-03-18 21:32:42,469 - INFO - Sample text found: oe ante eee
+ste,,h,OeOeb,o,6
+5agHia.,n,Mey,?
+%,he,hao,*o,Oy,ee
+2025-03-18 21:32:42,470 - INFO - Moved images.jpg to C:/Users/Kana/Desktop/test Bilder Text\images.jpg
+2025-03-18 21:32:42,530 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\kana2.jpg
+2025-03-18 21:32:42,864 - INFO - Text detection results for kana2.jpg: chars=94, ratio=7.712029535432263e-05, threshold=0.0001
+2025-03-18 21:32:42,864 - INFO - Sample text found: ee AAA ee lAhha* L
+1FOSQ011I LLL).
+Fens
+= KeaPa,(AaeaN, i coAf
+a BeePljm,VdPAY es ce
+a lau a ia Ae R
+2025-03-18 21:32:50,968 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\bugatti_la_voiture_noire.jpg
+2025-03-18 21:32:51,333 - INFO - Text detection results for bugatti_la_voiture_noire.jpg: chars=94, ratio=4.533179012345679e-05, threshold=0.0002
+2025-03-18 21:32:51,333 - INFO - Sample text found: a3 = ae Zz
+4 eis wen sop eae
+
+ee ees 4 ae ee web b I @ ae ge 224 fgg Pee? os 2 a a tile
+
+S= Eo = 2 3
+2025-03-18 21:32:51,364 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\bugatti_veyron.jpg
+2025-03-18 21:32:51,754 - INFO - Text detection results for bugatti_veyron.jpg: chars=129, ratio=6.221064814814815e-05, threshold=0.0002
+2025-03-18 21:32:51,754 - INFO - Sample text found: See, a oe
+Ss Saat Be y. ete sees So a cae ero ee ait fica vile . eee rs oo = ee. a ie .
+es a pew eee
+2025-03-18 21:32:51,784 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\cadillac_xts_royale.jpg
+2025-03-18 21:32:52,152 - INFO - Text detection results for cadillac_xts_royale.jpg: chars=60, ratio=2.8935185185185186e-05, threshold=0.0002
+2025-03-18 21:32:52,152 - INFO - Sample text found: Se Ce
+
+2. hovel snip pert
+
+Sian aoe
+
+ea SS Gg gee i ae er gs Regge ait Lt ee 2S
+a Pp -
+2025-03-18 21:32:52,221 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\cars_contact.jpg
+2025-03-18 21:32:52,818 - INFO - Text detection results for cars_contact.jpg: chars=229, ratio=9.015180146132527e-05, threshold=0.0002
+2025-03-18 21:32:52,818 - INFO - Sample text found: i ti a cee ere . = ee aie 3 iy
+ee S s eens ed,
+a3 nen a ooeate.peeeetemaat)k= ae r ih = =t,) aod
+Spo
+2025-03-18 21:32:52,825 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\Circle_Cars.png
+2025-03-18 21:32:52,946 - INFO - Text detection results for Circle_Cars.png: chars=0, ratio=0.0, threshold=0.0002
+2025-03-18 21:32:52,946 - INFO - Sample text found: 
+2025-03-18 21:32:52,950 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\Circle_Cars_400x400.png
+2025-03-18 21:32:53,062 - INFO - Text detection results for Circle_Cars_400x400.png: chars=0, ratio=0.0, threshold=0.0002
+2025-03-18 21:32:53,062 - INFO - Sample text found: 
+2025-03-18 21:32:53,068 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\Circle_Cars_w.png
+2025-03-18 21:32:53,195 - INFO - Text detection results for Circle_Cars_w.png: chars=5, ratio=1.9061779226473e-05, threshold=0.0002
+2025-03-18 21:32:53,195 - INFO - Sample text found: Sligo
+2025-03-18 21:32:53,225 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\ferrari_f12_tdf.jpg
+2025-03-18 21:32:53,678 - INFO - Text detection results for ferrari_f12_tdf.jpg: chars=140, ratio=6.751543209876543e-05, threshold=0.0002
+2025-03-18 21:32:53,679 - INFO - Sample text found: .
+
+SAgeSisen FeswreeiFta,
+
+eS es Nicene *
+Seat, geeie
+S2eeeeeeietcieetl nay RmyBeeOPgS
+PaaeGiuahPADT
+2025-03-18 21:32:53,709 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\ferrari_gtc4_lusso.jpg
+2025-03-18 21:32:54,015 - INFO - Text detection results for ferrari_gtc4_lusso.jpg: chars=38, ratio=1.8325617283950617e-05, threshold=0.0002
+2025-03-18 21:32:54,015 - INFO - Sample text found: =. Gs a Bits Wire Pigsat
+= S ase Sesoue&e SS in ET
+2025-03-18 21:32:54,048 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\ferrari_laferrari.jpg
+2025-03-18 21:32:54,517 - INFO - Text detection results for ferrari_laferrari.jpg: chars=145, ratio=6.99266975308642e-05, threshold=0.0002
+2025-03-18 21:32:54,518 - INFO - Sample text found: * SSeS BereSetee- oS ie ZLB
+Sea eemeteeeelapaetPoe ile Hite lig
+z oer.(-a OS Gamo E = BIN a? oe os S
+2025-03-18 21:32:54,601 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\home_bentley.jpg
+2025-03-18 21:32:54,966 - INFO - Text detection results for home_bentley.jpg: chars=53, ratio=1.3802083333333333e-05, threshold=0.0002
+2025-03-18 21:32:54,966 - INFO - Sample text found: cd
+vi Wa q)ee ed a j Yo N
+i Gun suit i N i
+Hea Nasaceneme eee a oo Do SS df
+2025-03-18 21:32:55,023 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\kana2.jpg
+2025-03-18 21:32:55,358 - INFO - Text detection results for kana2.jpg: chars=94, ratio=7.712029535432263e-05, threshold=0.0002
+2025-03-18 21:32:55,358 - INFO - Sample text found: ee AAA ee lAhha* L
+1FOSQ011I LLL).
+Fens
+= KeaPa,(AaeaN, i coAf
+a BeePljm,VdPAY es ce
+a lau a ia Ae R
+2025-03-18 21:32:58,640 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\bugatti_la_voiture_noire.jpg
+2025-03-18 21:32:59,004 - INFO - Text detection results for bugatti_la_voiture_noire.jpg: chars=94, ratio=4.533179012345679e-05, threshold=0.00031
+2025-03-18 21:32:59,004 - INFO - Sample text found: a3 = ae Zz
+4 eis wen sop eae
+
+ee ees 4 ae ee web b I @ ae ge 224 fgg Pee? os 2 a a tile
+
+S= Eo = 2 3
+2025-03-18 21:32:59,034 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\bugatti_veyron.jpg
+2025-03-18 21:32:59,420 - INFO - Text detection results for bugatti_veyron.jpg: chars=129, ratio=6.221064814814815e-05, threshold=0.00031
+2025-03-18 21:32:59,420 - INFO - Sample text found: See, a oe
+Ss Saat Be y. ete sees So a cae ero ee ait fica vile . eee rs oo = ee. a ie .
+es a pew eee
+2025-03-18 21:32:59,450 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\cadillac_xts_royale.jpg
+2025-03-18 21:32:59,820 - INFO - Text detection results for cadillac_xts_royale.jpg: chars=60, ratio=2.8935185185185186e-05, threshold=0.00031
+2025-03-18 21:32:59,820 - INFO - Sample text found: Se Ce
+
+2. hovel snip pert
+
+Sian aoe
+
+ea SS Gg gee i ae er gs Regge ait Lt ee 2S
+a Pp -
+2025-03-18 21:32:59,888 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\cars_contact.jpg
+2025-03-18 21:33:00,481 - INFO - Text detection results for cars_contact.jpg: chars=229, ratio=9.015180146132527e-05, threshold=0.00031
+2025-03-18 21:33:00,481 - INFO - Sample text found: i ti a cee ere . = ee aie 3 iy
+ee S s eens ed,
+a3 nen a ooeate.peeeetemaat)k= ae r ih = =t,) aod
+Spo
+2025-03-18 21:33:00,488 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\Circle_Cars.png
+2025-03-18 21:33:00,612 - INFO - Text detection results for Circle_Cars.png: chars=0, ratio=0.0, threshold=0.00031
+2025-03-18 21:33:00,612 - INFO - Sample text found: 
+2025-03-18 21:33:00,616 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\Circle_Cars_400x400.png
+2025-03-18 21:33:00,728 - INFO - Text detection results for Circle_Cars_400x400.png: chars=0, ratio=0.0, threshold=0.00031
+2025-03-18 21:33:00,728 - INFO - Sample text found: 
+2025-03-18 21:33:00,734 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\Circle_Cars_w.png
+2025-03-18 21:33:00,863 - INFO - Text detection results for Circle_Cars_w.png: chars=5, ratio=1.9061779226473e-05, threshold=0.00031
+2025-03-18 21:33:00,863 - INFO - Sample text found: Sligo
+2025-03-18 21:33:00,892 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\ferrari_f12_tdf.jpg
+2025-03-18 21:33:01,344 - INFO - Text detection results for ferrari_f12_tdf.jpg: chars=140, ratio=6.751543209876543e-05, threshold=0.00031
+2025-03-18 21:33:01,344 - INFO - Sample text found: .
+
+SAgeSisen FeswreeiFta,
+
+eS es Nicene *
+Seat, geeie
+S2eeeeeeietcieetl nay RmyBeeOPgS
+PaaeGiuahPADT
+2025-03-18 21:33:01,375 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\ferrari_gtc4_lusso.jpg
+2025-03-18 21:33:01,682 - INFO - Text detection results for ferrari_gtc4_lusso.jpg: chars=38, ratio=1.8325617283950617e-05, threshold=0.00031
+2025-03-18 21:33:01,682 - INFO - Sample text found: =. Gs a Bits Wire Pigsat
+= S ase Sesoue&e SS in ET
+2025-03-18 21:33:01,713 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\ferrari_laferrari.jpg
+2025-03-18 21:33:02,177 - INFO - Text detection results for ferrari_laferrari.jpg: chars=145, ratio=6.99266975308642e-05, threshold=0.00031
+2025-03-18 21:33:02,177 - INFO - Sample text found: * SSeS BereSetee- oS ie ZLB
+Sea eemeteeeelapaetPoe ile Hite lig
+z oer.(-a OS Gamo E = BIN a? oe os S
+2025-03-18 21:33:02,260 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\home_bentley.jpg
+2025-03-18 21:33:02,624 - INFO - Text detection results for home_bentley.jpg: chars=53, ratio=1.3802083333333333e-05, threshold=0.00031
+2025-03-18 21:33:02,624 - INFO - Sample text found: cd
+vi Wa q)ee ed a j Yo N
+i Gun suit i N i
+Hea Nasaceneme eee a oo Do SS df
+2025-03-18 21:33:02,682 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\kana2.jpg
+2025-03-18 21:33:03,014 - INFO - Text detection results for kana2.jpg: chars=94, ratio=7.712029535432263e-05, threshold=0.00031
+2025-03-18 21:33:03,014 - INFO - Sample text found: ee AAA ee lAhha* L
+1FOSQ011I LLL).
+Fens
+= KeaPa,(AaeaN, i coAf
+a BeePljm,VdPAY es ce
+a lau a ia Ae R
+2025-03-18 21:33:06,135 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\bugatti_la_voiture_noire.jpg
+2025-03-18 21:33:06,505 - INFO - Text detection results for bugatti_la_voiture_noire.jpg: chars=94, ratio=4.533179012345679e-05, threshold=0.00047
+2025-03-18 21:33:06,505 - INFO - Sample text found: a3 = ae Zz
+4 eis wen sop eae
+
+ee ees 4 ae ee web b I @ ae ge 224 fgg Pee? os 2 a a tile
+
+S= Eo = 2 3
+2025-03-18 21:33:06,536 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\bugatti_veyron.jpg
+2025-03-18 21:33:06,920 - INFO - Text detection results for bugatti_veyron.jpg: chars=129, ratio=6.221064814814815e-05, threshold=0.00047
+2025-03-18 21:33:06,921 - INFO - Sample text found: See, a oe
+Ss Saat Be y. ete sees So a cae ero ee ait fica vile . eee rs oo = ee. a ie .
+es a pew eee
+2025-03-18 21:33:06,951 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\cadillac_xts_royale.jpg
+2025-03-18 21:33:07,320 - INFO - Text detection results for cadillac_xts_royale.jpg: chars=60, ratio=2.8935185185185186e-05, threshold=0.00047
+2025-03-18 21:33:07,320 - INFO - Sample text found: Se Ce
+
+2. hovel snip pert
+
+Sian aoe
+
+ea SS Gg gee i ae er gs Regge ait Lt ee 2S
+a Pp -
+2025-03-18 21:33:07,390 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\cars_contact.jpg
+2025-03-18 21:33:07,983 - INFO - Text detection results for cars_contact.jpg: chars=229, ratio=9.015180146132527e-05, threshold=0.00047
+2025-03-18 21:33:07,984 - INFO - Sample text found: i ti a cee ere . = ee aie 3 iy
+ee S s eens ed,
+a3 nen a ooeate.peeeetemaat)k= ae r ih = =t,) aod
+Spo
+2025-03-18 21:33:07,990 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\Circle_Cars.png
+2025-03-18 21:33:08,113 - INFO - Text detection results for Circle_Cars.png: chars=0, ratio=0.0, threshold=0.00047
+2025-03-18 21:33:08,113 - INFO - Sample text found: 
+2025-03-18 21:33:08,117 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\Circle_Cars_400x400.png
+2025-03-18 21:33:08,228 - INFO - Text detection results for Circle_Cars_400x400.png: chars=0, ratio=0.0, threshold=0.00047
+2025-03-18 21:33:08,228 - INFO - Sample text found: 
+2025-03-18 21:33:08,234 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\Circle_Cars_w.png
+2025-03-18 21:33:08,363 - INFO - Text detection results for Circle_Cars_w.png: chars=5, ratio=1.9061779226473e-05, threshold=0.00047
+2025-03-18 21:33:08,363 - INFO - Sample text found: Sligo
+2025-03-18 21:33:08,393 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\ferrari_f12_tdf.jpg
+2025-03-18 21:33:08,849 - INFO - Text detection results for ferrari_f12_tdf.jpg: chars=140, ratio=6.751543209876543e-05, threshold=0.00047
+2025-03-18 21:33:08,849 - INFO - Sample text found: .
+
+SAgeSisen FeswreeiFta,
+
+eS es Nicene *
+Seat, geeie
+S2eeeeeeietcieetl nay RmyBeeOPgS
+PaaeGiuahPADT
+2025-03-18 21:33:08,879 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\ferrari_gtc4_lusso.jpg
+2025-03-18 21:33:09,185 - INFO - Text detection results for ferrari_gtc4_lusso.jpg: chars=38, ratio=1.8325617283950617e-05, threshold=0.00047
+2025-03-18 21:33:09,186 - INFO - Sample text found: =. Gs a Bits Wire Pigsat
+= S ase Sesoue&e SS in ET
+2025-03-18 21:33:09,217 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\ferrari_laferrari.jpg
+2025-03-18 21:33:09,684 - INFO - Text detection results for ferrari_laferrari.jpg: chars=145, ratio=6.99266975308642e-05, threshold=0.00047
+2025-03-18 21:33:09,684 - INFO - Sample text found: * SSeS BereSetee- oS ie ZLB
+Sea eemeteeeelapaetPoe ile Hite lig
+z oer.(-a OS Gamo E = BIN a? oe os S
+2025-03-18 21:33:09,765 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\home_bentley.jpg
+2025-03-18 21:33:10,127 - INFO - Text detection results for home_bentley.jpg: chars=53, ratio=1.3802083333333333e-05, threshold=0.00047
+2025-03-18 21:33:10,127 - INFO - Sample text found: cd
+vi Wa q)ee ed a j Yo N
+i Gun suit i N i
+Hea Nasaceneme eee a oo Do SS df
+2025-03-18 21:33:10,186 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\kana2.jpg
+2025-03-18 21:33:10,521 - INFO - Text detection results for kana2.jpg: chars=94, ratio=7.712029535432263e-05, threshold=0.00047
+2025-03-18 21:33:10,521 - INFO - Sample text found: ee AAA ee lAhha* L
+1FOSQ011I LLL).
+Fens
+= KeaPa,(AaeaN, i coAf
+a BeePljm,VdPAY es ce
+a lau a ia Ae R
+2025-03-18 21:33:13,020 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\bugatti_la_voiture_noire.jpg
+2025-03-18 21:33:13,385 - INFO - Text detection results for bugatti_la_voiture_noire.jpg: chars=94, ratio=4.533179012345679e-05, threshold=0.00072
+2025-03-18 21:33:13,385 - INFO - Sample text found: a3 = ae Zz
+4 eis wen sop eae
+
+ee ees 4 ae ee web b I @ ae ge 224 fgg Pee? os 2 a a tile
+
+S= Eo = 2 3
+2025-03-18 21:33:13,416 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\bugatti_veyron.jpg
+2025-03-18 21:33:13,805 - INFO - Text detection results for bugatti_veyron.jpg: chars=129, ratio=6.221064814814815e-05, threshold=0.00072
+2025-03-18 21:33:13,805 - INFO - Sample text found: See, a oe
+Ss Saat Be y. ete sees So a cae ero ee ait fica vile . eee rs oo = ee. a ie .
+es a pew eee
+2025-03-18 21:33:13,835 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\cadillac_xts_royale.jpg
+2025-03-18 21:33:14,203 - INFO - Text detection results for cadillac_xts_royale.jpg: chars=60, ratio=2.8935185185185186e-05, threshold=0.00072
+2025-03-18 21:33:14,203 - INFO - Sample text found: Se Ce
+
+2. hovel snip pert
+
+Sian aoe
+
+ea SS Gg gee i ae er gs Regge ait Lt ee 2S
+a Pp -
+2025-03-18 21:33:14,272 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\cars_contact.jpg
+2025-03-18 21:33:14,871 - INFO - Text detection results for cars_contact.jpg: chars=229, ratio=9.015180146132527e-05, threshold=0.00072
+2025-03-18 21:33:14,871 - INFO - Sample text found: i ti a cee ere . = ee aie 3 iy
+ee S s eens ed,
+a3 nen a ooeate.peeeetemaat)k= ae r ih = =t,) aod
+Spo
+2025-03-18 21:33:14,878 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\Circle_Cars.png
+2025-03-18 21:33:15,004 - INFO - Text detection results for Circle_Cars.png: chars=0, ratio=0.0, threshold=0.00072
+2025-03-18 21:33:15,004 - INFO - Sample text found: 
+2025-03-18 21:33:15,008 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\Circle_Cars_400x400.png
+2025-03-18 21:33:15,120 - INFO - Text detection results for Circle_Cars_400x400.png: chars=0, ratio=0.0, threshold=0.00072
+2025-03-18 21:33:15,120 - INFO - Sample text found: 
+2025-03-18 21:33:15,127 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\Circle_Cars_w.png
+2025-03-18 21:33:15,257 - INFO - Text detection results for Circle_Cars_w.png: chars=5, ratio=1.9061779226473e-05, threshold=0.00072
+2025-03-18 21:33:15,257 - INFO - Sample text found: Sligo
+2025-03-18 21:33:15,288 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\ferrari_f12_tdf.jpg
+2025-03-18 21:33:15,739 - INFO - Text detection results for ferrari_f12_tdf.jpg: chars=140, ratio=6.751543209876543e-05, threshold=0.00072
+2025-03-18 21:33:15,739 - INFO - Sample text found: .
+
+SAgeSisen FeswreeiFta,
+
+eS es Nicene *
+Seat, geeie
+S2eeeeeeietcieetl nay RmyBeeOPgS
+PaaeGiuahPADT
+2025-03-18 21:33:15,770 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\ferrari_gtc4_lusso.jpg
+2025-03-18 21:33:16,077 - INFO - Text detection results for ferrari_gtc4_lusso.jpg: chars=38, ratio=1.8325617283950617e-05, threshold=0.00072
+2025-03-18 21:33:16,077 - INFO - Sample text found: =. Gs a Bits Wire Pigsat
+= S ase Sesoue&e SS in ET
+2025-03-18 21:33:16,109 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\ferrari_laferrari.jpg
+2025-03-18 21:33:16,574 - INFO - Text detection results for ferrari_laferrari.jpg: chars=145, ratio=6.99266975308642e-05, threshold=0.00072
+2025-03-18 21:33:16,574 - INFO - Sample text found: * SSeS BereSetee- oS ie ZLB
+Sea eemeteeeelapaetPoe ile Hite lig
+z oer.(-a OS Gamo E = BIN a? oe os S
+2025-03-18 21:33:16,656 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\home_bentley.jpg
+2025-03-18 21:33:17,015 - INFO - Text detection results for home_bentley.jpg: chars=53, ratio=1.3802083333333333e-05, threshold=0.00072
+2025-03-18 21:33:17,015 - INFO - Sample text found: cd
+vi Wa q)ee ed a j Yo N
+i Gun suit i N i
+Hea Nasaceneme eee a oo Do SS df
+2025-03-18 21:33:17,074 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\kana2.jpg
+2025-03-18 21:33:17,413 - INFO - Text detection results for kana2.jpg: chars=94, ratio=7.712029535432263e-05, threshold=0.00072
+2025-03-18 21:33:17,413 - INFO - Sample text found: ee AAA ee lAhha* L
+1FOSQ011I LLL).
+Fens
+= KeaPa,(AaeaN, i coAf
+a BeePljm,VdPAY es ce
+a lau a ia Ae R
+2025-03-18 21:33:19,352 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\bugatti_la_voiture_noire.jpg
+2025-03-18 21:33:19,718 - INFO - Text detection results for bugatti_la_voiture_noire.jpg: chars=94, ratio=4.533179012345679e-05, threshold=0.001
+2025-03-18 21:33:19,718 - INFO - Sample text found: a3 = ae Zz
+4 eis wen sop eae
+
+ee ees 4 ae ee web b I @ ae ge 224 fgg Pee? os 2 a a tile
+
+S= Eo = 2 3
+2025-03-18 21:33:19,748 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\bugatti_veyron.jpg
+2025-03-18 21:33:20,137 - INFO - Text detection results for bugatti_veyron.jpg: chars=129, ratio=6.221064814814815e-05, threshold=0.001
+2025-03-18 21:33:20,137 - INFO - Sample text found: See, a oe
+Ss Saat Be y. ete sees So a cae ero ee ait fica vile . eee rs oo = ee. a ie .
+es a pew eee
+2025-03-18 21:33:20,168 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\cadillac_xts_royale.jpg
+2025-03-18 21:33:20,537 - INFO - Text detection results for cadillac_xts_royale.jpg: chars=60, ratio=2.8935185185185186e-05, threshold=0.001
+2025-03-18 21:33:20,537 - INFO - Sample text found: Se Ce
+
+2. hovel snip pert
+
+Sian aoe
+
+ea SS Gg gee i ae er gs Regge ait Lt ee 2S
+a Pp -
+2025-03-18 21:33:20,606 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\cars_contact.jpg
+2025-03-18 21:33:21,199 - INFO - Text detection results for cars_contact.jpg: chars=229, ratio=9.015180146132527e-05, threshold=0.001
+2025-03-18 21:33:21,199 - INFO - Sample text found: i ti a cee ere . = ee aie 3 iy
+ee S s eens ed,
+a3 nen a ooeate.peeeetemaat)k= ae r ih = =t,) aod
+Spo
+2025-03-18 21:33:21,206 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\Circle_Cars.png
+2025-03-18 21:33:21,327 - INFO - Text detection results for Circle_Cars.png: chars=0, ratio=0.0, threshold=0.001
+2025-03-18 21:33:21,327 - INFO - Sample text found: 
+2025-03-18 21:33:21,331 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\Circle_Cars_400x400.png
+2025-03-18 21:33:21,442 - INFO - Text detection results for Circle_Cars_400x400.png: chars=0, ratio=0.0, threshold=0.001
+2025-03-18 21:33:21,442 - INFO - Sample text found: 
+2025-03-18 21:33:21,449 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\Circle_Cars_w.png
+2025-03-18 21:33:21,578 - INFO - Text detection results for Circle_Cars_w.png: chars=5, ratio=1.9061779226473e-05, threshold=0.001
+2025-03-18 21:33:21,578 - INFO - Sample text found: Sligo
+2025-03-18 21:33:21,608 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\ferrari_f12_tdf.jpg
+2025-03-18 21:33:22,060 - INFO - Text detection results for ferrari_f12_tdf.jpg: chars=140, ratio=6.751543209876543e-05, threshold=0.001
+2025-03-18 21:33:22,060 - INFO - Sample text found: .
+
+SAgeSisen FeswreeiFta,
+
+eS es Nicene *
+Seat, geeie
+S2eeeeeeietcieetl nay RmyBeeOPgS
+PaaeGiuahPADT
+2025-03-18 21:33:22,091 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\ferrari_gtc4_lusso.jpg
+2025-03-18 21:33:22,398 - INFO - Text detection results for ferrari_gtc4_lusso.jpg: chars=38, ratio=1.8325617283950617e-05, threshold=0.001
+2025-03-18 21:33:22,398 - INFO - Sample text found: =. Gs a Bits Wire Pigsat
+= S ase Sesoue&e SS in ET
+2025-03-18 21:33:22,430 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\ferrari_laferrari.jpg
+2025-03-18 21:33:22,895 - INFO - Text detection results for ferrari_laferrari.jpg: chars=145, ratio=6.99266975308642e-05, threshold=0.001
+2025-03-18 21:33:22,895 - INFO - Sample text found: * SSeS BereSetee- oS ie ZLB
+Sea eemeteeeelapaetPoe ile Hite lig
+z oer.(-a OS Gamo E = BIN a? oe os S
+2025-03-18 21:33:22,976 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\home_bentley.jpg
+2025-03-18 21:33:23,337 - INFO - Text detection results for home_bentley.jpg: chars=53, ratio=1.3802083333333333e-05, threshold=0.001
+2025-03-18 21:33:23,337 - INFO - Sample text found: cd
+vi Wa q)ee ed a j Yo N
+i Gun suit i N i
+Hea Nasaceneme eee a oo Do SS df
+2025-03-18 21:33:23,396 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\kana2.jpg
+2025-03-18 21:33:23,730 - INFO - Text detection results for kana2.jpg: chars=94, ratio=7.712029535432263e-05, threshold=0.001
+2025-03-18 21:33:23,730 - INFO - Sample text found: ee AAA ee lAhha* L
+1FOSQ011I LLL).
+Fens
+= KeaPa,(AaeaN, i coAf
+a BeePljm,VdPAY es ce
+a lau a ia Ae R
+2025-03-18 21:34:09,349 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\1images.jpg
+2025-03-18 21:34:09,492 - INFO - Text detection results for 1images.jpg: chars=34, ratio=0.0006724417546774258, threshold=0.0002
+2025-03-18 21:34:09,492 - INFO - Sample text found: i.e
+&) p,
+Aa 1
+NY 8)
+4 AMeoTenserrWeleen
+S.
+2025-03-18 21:34:09,492 - INFO - Moved 1images.jpg to C:/Users/Kana/Desktop/test Bilder Text\1images.jpg
+2025-03-18 21:34:09,493 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\2Unbenannt.png
+2025-03-18 21:34:09,655 - INFO - Text detection results for 2Unbenannt.png: chars=80, ratio=0.001589825119236884, threshold=0.0002
+2025-03-18 21:34:09,655 - INFO - Sample text found: oBezeSemanticensis
+SeneMofaLarce
+resuksins2SeQRCHiis=
+voreotnteSdattoitsinfornation
+2025-03-18 21:34:09,656 - INFO - Moved 2Unbenannt.png to C:/Users/Kana/Desktop/test Bilder Text\2Unbenannt.png
+2025-03-18 21:34:09,668 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\bugatti_la_voiture_noire.jpg
+2025-03-18 21:34:10,036 - INFO - Text detection results for bugatti_la_voiture_noire.jpg: chars=94, ratio=4.533179012345679e-05, threshold=0.0002
+2025-03-18 21:34:10,036 - INFO - Sample text found: a3 = ae Zz
+4 eis wen sop eae
+
+ee ees 4 ae ee web b I @ ae ge 224 fgg Pee? os 2 a a tile
+
+S= Eo = 2 3
+2025-03-18 21:34:10,049 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\bugatti_veyron.jpg
+2025-03-18 21:34:10,438 - INFO - Text detection results for bugatti_veyron.jpg: chars=129, ratio=6.221064814814815e-05, threshold=0.0002
+2025-03-18 21:34:10,438 - INFO - Sample text found: See, a oe
+Ss Saat Be y. ete sees So a cae ero ee ait fica vile . eee rs oo = ee. a ie .
+es a pew eee
+2025-03-18 21:34:10,451 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\cadillac_xts_royale.jpg
+2025-03-18 21:34:10,821 - INFO - Text detection results for cadillac_xts_royale.jpg: chars=60, ratio=2.8935185185185186e-05, threshold=0.0002
+2025-03-18 21:34:10,821 - INFO - Sample text found: Se Ce
+
+2. hovel snip pert
+
+Sian aoe
+
+ea SS Gg gee i ae er gs Regge ait Lt ee 2S
+a Pp -
+2025-03-18 21:34:10,853 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\cars_contact.jpg
+2025-03-18 21:34:11,449 - INFO - Text detection results for cars_contact.jpg: chars=229, ratio=9.015180146132527e-05, threshold=0.0002
+2025-03-18 21:34:11,449 - INFO - Sample text found: i ti a cee ere . = ee aie 3 iy
+ee S s eens ed,
+a3 nen a ooeate.peeeetemaat)k= ae r ih = =t,) aod
+Spo
+2025-03-18 21:34:11,452 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\Circle_Cars.png
+2025-03-18 21:34:11,574 - INFO - Text detection results for Circle_Cars.png: chars=0, ratio=0.0, threshold=0.0002
+2025-03-18 21:34:11,574 - INFO - Sample text found: 
+2025-03-18 21:34:11,575 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\Circle_Cars_400x400.png
+2025-03-18 21:34:11,688 - INFO - Text detection results for Circle_Cars_400x400.png: chars=0, ratio=0.0, threshold=0.0002
+2025-03-18 21:34:11,688 - INFO - Sample text found: 
+2025-03-18 21:34:11,690 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\Circle_Cars_w.png
+2025-03-18 21:34:11,819 - INFO - Text detection results for Circle_Cars_w.png: chars=5, ratio=1.9061779226473e-05, threshold=0.0002
+2025-03-18 21:34:11,819 - INFO - Sample text found: Sligo
+2025-03-18 21:34:11,831 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\ferrari_f12_tdf.jpg
+2025-03-18 21:34:12,282 - INFO - Text detection results for ferrari_f12_tdf.jpg: chars=140, ratio=6.751543209876543e-05, threshold=0.0002
+2025-03-18 21:34:12,282 - INFO - Sample text found: .
+
+SAgeSisen FeswreeiFta,
+
+eS es Nicene *
+Seat, geeie
+S2eeeeeeietcieetl nay RmyBeeOPgS
+PaaeGiuahPADT
+2025-03-18 21:34:12,295 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\ferrari_gtc4_lusso.jpg
+2025-03-18 21:34:12,602 - INFO - Text detection results for ferrari_gtc4_lusso.jpg: chars=38, ratio=1.8325617283950617e-05, threshold=0.0002
+2025-03-18 21:34:12,602 - INFO - Sample text found: =. Gs a Bits Wire Pigsat
+= S ase Sesoue&e SS in ET
+2025-03-18 21:34:12,614 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\ferrari_laferrari.jpg
+2025-03-18 21:34:13,081 - INFO - Text detection results for ferrari_laferrari.jpg: chars=145, ratio=6.99266975308642e-05, threshold=0.0002
+2025-03-18 21:34:13,081 - INFO - Sample text found: * SSeS BereSetee- oS ie ZLB
+Sea eemeteeeelapaetPoe ile Hite lig
+z oer.(-a OS Gamo E = BIN a? oe os S
+2025-03-18 21:34:13,155 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\home_audi.jpg
+2025-03-18 21:34:14,524 - INFO - Text detection results for home_audi.jpg: chars=669, ratio=0.00012098524305555556, threshold=0.0002
+2025-03-18 21:34:14,524 - INFO - Sample text found: - zs reas a = ar Ree e se a eid ee a he * a 64h
+" a eae 3 a x a
+ee 3 eye yoo tee. Meo , ar se A fae
+2025-03-18 21:34:14,561 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\home_bentley.jpg
+2025-03-18 21:34:14,924 - INFO - Text detection results for home_bentley.jpg: chars=53, ratio=1.3802083333333333e-05, threshold=0.0002
+2025-03-18 21:34:14,924 - INFO - Sample text found: cd
+vi Wa q)ee ed a j Yo N
+i Gun suit i N i
+Hea Nasaceneme eee a oo Do SS df
+2025-03-18 21:34:14,925 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\images.jpg
+2025-03-18 21:34:15,074 - INFO - Text detection results for images.jpg: chars=57, ratio=0.0011326378539493294, threshold=0.0002
+2025-03-18 21:34:15,074 - INFO - Sample text found: oe ante eee
+ste,,h,OeOeb,o,6
+5agHia.,n,Mey,?
+%,he,hao,*o,Oy,ee
+2025-03-18 21:34:15,075 - INFO - Moved images.jpg to C:/Users/Kana/Desktop/test Bilder Text\images.jpg
+2025-03-18 21:34:15,102 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\kana2.jpg
+2025-03-18 21:34:15,440 - INFO - Text detection results for kana2.jpg: chars=94, ratio=7.712029535432263e-05, threshold=0.0002
+2025-03-18 21:34:15,440 - INFO - Sample text found: ee AAA ee lAhha* L
+1FOSQ011I LLL).
+Fens
+= KeaPa,(AaeaN, i coAf
+a BeePljm,VdPAY es ce
+a lau a ia Ae R
+2025-03-18 21:49:53,185 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\1images.jpg
+2025-03-18 21:49:53,328 - INFO - Text detection results for 1images.jpg: chars=34, ratio=0.0006724417546774258, threshold=0.0001
+2025-03-18 21:49:53,328 - INFO - Sample text found: i.e
+&) p,
+Aa 1
+NY 8)
+4 AMeoTenserrWeleen
+S.
+2025-03-18 21:49:53,329 - INFO - Moved 1images.jpg to C:/Users/Kana/Desktop/test Bilder Text\1images.jpg
+2025-03-18 21:49:53,329 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\2Unbenannt.png
+2025-03-18 21:49:53,475 - INFO - Text detection results for 2Unbenannt.png: chars=80, ratio=0.001589825119236884, threshold=0.0001
+2025-03-18 21:49:53,475 - INFO - Sample text found: oBezeSemanticensis
+SeneMofaLarce
+resuksins2SeQRCHiis=
+voreotnteSdattoitsinfornation
+2025-03-18 21:49:53,476 - INFO - Moved 2Unbenannt.png to C:/Users/Kana/Desktop/test Bilder Text\2Unbenannt.png
+2025-03-18 21:49:53,488 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\bugatti_la_voiture_noire.jpg
+2025-03-18 21:49:53,855 - INFO - Text detection results for bugatti_la_voiture_noire.jpg: chars=94, ratio=4.533179012345679e-05, threshold=0.0001
+2025-03-18 21:49:53,855 - INFO - Sample text found: a3 = ae Zz
+4 eis wen sop eae
+
+ee ees 4 ae ee web b I @ ae ge 224 fgg Pee? os 2 a a tile
+
+S= Eo = 2 3
+2025-03-18 21:49:53,867 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\bugatti_veyron.jpg
+2025-03-18 21:49:54,254 - INFO - Text detection results for bugatti_veyron.jpg: chars=129, ratio=6.221064814814815e-05, threshold=0.0001
+2025-03-18 21:49:54,254 - INFO - Sample text found: See, a oe
+Ss Saat Be y. ete sees So a cae ero ee ait fica vile . eee rs oo = ee. a ie .
+es a pew eee
+2025-03-18 21:49:54,266 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\cadillac_xts_royale.jpg
+2025-03-18 21:49:54,640 - INFO - Text detection results for cadillac_xts_royale.jpg: chars=60, ratio=2.8935185185185186e-05, threshold=0.0001
+2025-03-18 21:49:54,640 - INFO - Sample text found: Se Ce
+
+2. hovel snip pert
+
+Sian aoe
+
+ea SS Gg gee i ae er gs Regge ait Lt ee 2S
+a Pp -
+2025-03-18 21:49:54,671 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\cars_contact.jpg
+2025-03-18 21:49:55,268 - INFO - Text detection results for cars_contact.jpg: chars=229, ratio=9.015180146132527e-05, threshold=0.0001
+2025-03-18 21:49:55,268 - INFO - Sample text found: i ti a cee ere . = ee aie 3 iy
+ee S s eens ed,
+a3 nen a ooeate.peeeetemaat)k= ae r ih = =t,) aod
+Spo
+2025-03-18 21:49:55,271 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\Circle_Cars.png
+2025-03-18 21:49:55,395 - INFO - Text detection results for Circle_Cars.png: chars=0, ratio=0.0, threshold=0.0001
+2025-03-18 21:49:55,395 - INFO - Sample text found: 
+2025-03-18 21:49:55,396 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\Circle_Cars_400x400.png
+2025-03-18 21:49:55,509 - INFO - Text detection results for Circle_Cars_400x400.png: chars=0, ratio=0.0, threshold=0.0001
+2025-03-18 21:49:55,509 - INFO - Sample text found: 
+2025-03-18 21:49:55,511 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\Circle_Cars_w.png
+2025-03-18 21:49:55,641 - INFO - Text detection results for Circle_Cars_w.png: chars=5, ratio=1.9061779226473e-05, threshold=0.0001
+2025-03-18 21:49:55,641 - INFO - Sample text found: Sligo
+2025-03-18 21:49:55,653 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\ferrari_f12_tdf.jpg
+2025-03-18 21:49:56,105 - INFO - Text detection results for ferrari_f12_tdf.jpg: chars=140, ratio=6.751543209876543e-05, threshold=0.0001
+2025-03-18 21:49:56,105 - INFO - Sample text found: .
+
+SAgeSisen FeswreeiFta,
+
+eS es Nicene *
+Seat, geeie
+S2eeeeeeietcieetl nay RmyBeeOPgS
+PaaeGiuahPADT
+2025-03-18 21:49:56,117 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\ferrari_gtc4_lusso.jpg
+2025-03-18 21:49:56,423 - INFO - Text detection results for ferrari_gtc4_lusso.jpg: chars=38, ratio=1.8325617283950617e-05, threshold=0.0001
+2025-03-18 21:49:56,423 - INFO - Sample text found: =. Gs a Bits Wire Pigsat
+= S ase Sesoue&e SS in ET
+2025-03-18 21:49:56,436 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\ferrari_laferrari.jpg
+2025-03-18 21:49:56,903 - INFO - Text detection results for ferrari_laferrari.jpg: chars=145, ratio=6.99266975308642e-05, threshold=0.0001
+2025-03-18 21:49:56,903 - INFO - Sample text found: * SSeS BereSetee- oS ie ZLB
+Sea eemeteeeelapaetPoe ile Hite lig
+z oer.(-a OS Gamo E = BIN a? oe os S
+2025-03-18 21:49:56,976 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\home_audi.jpg
+2025-03-18 21:49:58,342 - INFO - Text detection results for home_audi.jpg: chars=669, ratio=0.00012098524305555556, threshold=0.0001
+2025-03-18 21:49:58,342 - INFO - Sample text found: - zs reas a = ar Ree e se a eid ee a he * a 64h
+" a eae 3 a x a
+ee 3 eye yoo tee. Meo , ar se A fae
+2025-03-18 21:49:58,343 - INFO - Moved home_audi.jpg to C:/Users/Kana/Desktop/test Bilder Text\home_audi.jpg
+2025-03-18 21:49:58,379 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\home_bentley.jpg
+2025-03-18 21:49:58,740 - INFO - Text detection results for home_bentley.jpg: chars=53, ratio=1.3802083333333333e-05, threshold=0.0001
+2025-03-18 21:49:58,740 - INFO - Sample text found: cd
+vi Wa q)ee ed a j Yo N
+i Gun suit i N i
+Hea Nasaceneme eee a oo Do SS df
+2025-03-18 21:49:58,741 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\images.jpg
+2025-03-18 21:49:58,893 - INFO - Text detection results for images.jpg: chars=57, ratio=0.0011326378539493294, threshold=0.0001
+2025-03-18 21:49:58,893 - INFO - Sample text found: oe ante eee
+ste,,h,OeOeb,o,6
+5agHia.,n,Mey,?
+%,he,hao,*o,Oy,ee
+2025-03-18 21:49:58,894 - INFO - Moved images.jpg to C:/Users/Kana/Desktop/test Bilder Text\images.jpg
+2025-03-18 21:49:58,921 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\kana2.jpg
+2025-03-18 21:49:59,255 - INFO - Text detection results for kana2.jpg: chars=94, ratio=7.712029535432263e-05, threshold=0.0001
+2025-03-18 21:49:59,255 - INFO - Sample text found: ee AAA ee lAhha* L
+1FOSQ011I LLL).
+Fens
+= KeaPa,(AaeaN, i coAf
+a BeePljm,VdPAY es ce
+a lau a ia Ae R
+2025-03-18 21:50:30,488 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\1images.jpg
+2025-03-18 21:50:30,628 - INFO - Text detection results for 1images.jpg: chars=34, ratio=0.0006724417546774258, threshold=7e-05
+2025-03-18 21:50:30,628 - INFO - Sample text found: i.e
+&) p,
+Aa 1
+NY 8)
+4 AMeoTenserrWeleen
+S.
+2025-03-18 21:50:30,629 - INFO - Moved 1images.jpg to C:/Users/Kana/Desktop/test Bilder Text\1images.jpg
+2025-03-18 21:50:30,630 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\2Unbenannt.png
+2025-03-18 21:50:30,776 - INFO - Text detection results for 2Unbenannt.png: chars=80, ratio=0.001589825119236884, threshold=7e-05
+2025-03-18 21:50:30,776 - INFO - Sample text found: oBezeSemanticensis
+SeneMofaLarce
+resuksins2SeQRCHiis=
+voreotnteSdattoitsinfornation
+2025-03-18 21:50:30,776 - INFO - Moved 2Unbenannt.png to C:/Users/Kana/Desktop/test Bilder Text\2Unbenannt.png
+2025-03-18 21:50:30,789 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\bugatti_la_voiture_noire.jpg
+2025-03-18 21:50:31,157 - INFO - Text detection results for bugatti_la_voiture_noire.jpg: chars=94, ratio=4.533179012345679e-05, threshold=7e-05
+2025-03-18 21:50:31,157 - INFO - Sample text found: a3 = ae Zz
+4 eis wen sop eae
+
+ee ees 4 ae ee web b I @ ae ge 224 fgg Pee? os 2 a a tile
+
+S= Eo = 2 3
+2025-03-18 21:50:31,169 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\bugatti_veyron.jpg
+2025-03-18 21:50:31,561 - INFO - Text detection results for bugatti_veyron.jpg: chars=129, ratio=6.221064814814815e-05, threshold=7e-05
+2025-03-18 21:50:31,561 - INFO - Sample text found: See, a oe
+Ss Saat Be y. ete sees So a cae ero ee ait fica vile . eee rs oo = ee. a ie .
+es a pew eee
+2025-03-18 21:50:31,573 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\cadillac_xts_royale.jpg
+2025-03-18 21:50:31,944 - INFO - Text detection results for cadillac_xts_royale.jpg: chars=60, ratio=2.8935185185185186e-05, threshold=7e-05
+2025-03-18 21:50:31,944 - INFO - Sample text found: Se Ce
+
+2. hovel snip pert
+
+Sian aoe
+
+ea SS Gg gee i ae er gs Regge ait Lt ee 2S
+a Pp -
+2025-03-18 21:50:31,975 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\cars_contact.jpg
+2025-03-18 21:50:32,569 - INFO - Text detection results for cars_contact.jpg: chars=229, ratio=9.015180146132527e-05, threshold=7e-05
+2025-03-18 21:50:32,569 - INFO - Sample text found: i ti a cee ere . = ee aie 3 iy
+ee S s eens ed,
+a3 nen a ooeate.peeeetemaat)k= ae r ih = =t,) aod
+Spo
+2025-03-18 21:50:32,570 - INFO - Moved cars_contact.jpg to C:/Users/Kana/Desktop/test Bilder Text\cars_contact.jpg
+2025-03-18 21:50:32,572 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\Circle_Cars.png
+2025-03-18 21:50:32,694 - INFO - Text detection results for Circle_Cars.png: chars=0, ratio=0.0, threshold=7e-05
+2025-03-18 21:50:32,694 - INFO - Sample text found: 
+2025-03-18 21:50:32,695 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\Circle_Cars_400x400.png
+2025-03-18 21:50:32,809 - INFO - Text detection results for Circle_Cars_400x400.png: chars=0, ratio=0.0, threshold=7e-05
+2025-03-18 21:50:32,809 - INFO - Sample text found: 
+2025-03-18 21:50:32,811 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\Circle_Cars_w.png
+2025-03-18 21:50:32,939 - INFO - Text detection results for Circle_Cars_w.png: chars=5, ratio=1.9061779226473e-05, threshold=7e-05
+2025-03-18 21:50:32,939 - INFO - Sample text found: Sligo
+2025-03-18 21:50:32,951 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\ferrari_f12_tdf.jpg
+2025-03-18 21:50:33,406 - INFO - Text detection results for ferrari_f12_tdf.jpg: chars=140, ratio=6.751543209876543e-05, threshold=7e-05
+2025-03-18 21:50:33,406 - INFO - Sample text found: .
+
+SAgeSisen FeswreeiFta,
+
+eS es Nicene *
+Seat, geeie
+S2eeeeeeietcieetl nay RmyBeeOPgS
+PaaeGiuahPADT
+2025-03-18 21:50:33,417 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\ferrari_gtc4_lusso.jpg
+2025-03-18 21:50:33,721 - INFO - Text detection results for ferrari_gtc4_lusso.jpg: chars=38, ratio=1.8325617283950617e-05, threshold=7e-05
+2025-03-18 21:50:33,722 - INFO - Sample text found: =. Gs a Bits Wire Pigsat
+= S ase Sesoue&e SS in ET
+2025-03-18 21:50:33,733 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\ferrari_laferrari.jpg
+2025-03-18 21:50:34,199 - INFO - Text detection results for ferrari_laferrari.jpg: chars=145, ratio=6.99266975308642e-05, threshold=7e-05
+2025-03-18 21:50:34,199 - INFO - Sample text found: * SSeS BereSetee- oS ie ZLB
+Sea eemeteeeelapaetPoe ile Hite lig
+z oer.(-a OS Gamo E = BIN a? oe os S
+2025-03-18 21:50:34,271 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\home_audi.jpg
+2025-03-18 21:50:35,643 - INFO - Text detection results for home_audi.jpg: chars=669, ratio=0.00012098524305555556, threshold=7e-05
+2025-03-18 21:50:35,643 - INFO - Sample text found: - zs reas a = ar Ree e se a eid ee a he * a 64h
+" a eae 3 a x a
+ee 3 eye yoo tee. Meo , ar se A fae
+2025-03-18 21:50:35,644 - INFO - Moved home_audi.jpg to C:/Users/Kana/Desktop/test Bilder Text\home_audi.jpg
+2025-03-18 21:50:35,679 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\home_bentley.jpg
+2025-03-18 21:50:36,041 - INFO - Text detection results for home_bentley.jpg: chars=53, ratio=1.3802083333333333e-05, threshold=7e-05
+2025-03-18 21:50:36,041 - INFO - Sample text found: cd
+vi Wa q)ee ed a j Yo N
+i Gun suit i N i
+Hea Nasaceneme eee a oo Do SS df
+2025-03-18 21:50:36,042 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\images.jpg
+2025-03-18 21:50:36,191 - INFO - Text detection results for images.jpg: chars=57, ratio=0.0011326378539493294, threshold=7e-05
+2025-03-18 21:50:36,191 - INFO - Sample text found: oe ante eee
+ste,,h,OeOeb,o,6
+5agHia.,n,Mey,?
+%,he,hao,*o,Oy,ee
+2025-03-18 21:50:36,192 - INFO - Moved images.jpg to C:/Users/Kana/Desktop/test Bilder Text\images.jpg
+2025-03-18 21:50:36,218 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\kana2.jpg
+2025-03-18 21:50:36,553 - INFO - Text detection results for kana2.jpg: chars=94, ratio=7.712029535432263e-05, threshold=7e-05
+2025-03-18 21:50:36,553 - INFO - Sample text found: ee AAA ee lAhha* L
+1FOSQ011I LLL).
+Fens
+= KeaPa,(AaeaN, i coAf
+a BeePljm,VdPAY es ce
+a lau a ia Ae R
+2025-03-18 21:50:36,554 - INFO - Moved kana2.jpg to C:/Users/Kana/Desktop/test Bilder Text\kana2.jpg
+2025-03-18 21:50:53,855 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\1images.jpg
+2025-03-18 21:50:53,994 - INFO - Text detection results for 1images.jpg: chars=34, ratio=0.0006724417546774258, threshold=0.0002
+2025-03-18 21:50:53,994 - INFO - Sample text found: i.e
+&) p,
+Aa 1
+NY 8)
+4 AMeoTenserrWeleen
+S.
+2025-03-18 21:50:53,995 - INFO - Moved 1images.jpg to C:/Users/Kana/Desktop/test Bilder Text\1images.jpg
+2025-03-18 21:50:53,995 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\2Unbenannt.png
+2025-03-18 21:50:54,142 - INFO - Text detection results for 2Unbenannt.png: chars=80, ratio=0.001589825119236884, threshold=0.0002
+2025-03-18 21:50:54,142 - INFO - Sample text found: oBezeSemanticensis
+SeneMofaLarce
+resuksins2SeQRCHiis=
+voreotnteSdattoitsinfornation
+2025-03-18 21:50:54,142 - INFO - Moved 2Unbenannt.png to C:/Users/Kana/Desktop/test Bilder Text\2Unbenannt.png
+2025-03-18 21:50:54,155 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\bugatti_la_voiture_noire.jpg
+2025-03-18 21:50:54,520 - INFO - Text detection results for bugatti_la_voiture_noire.jpg: chars=94, ratio=4.533179012345679e-05, threshold=0.0002
+2025-03-18 21:50:54,520 - INFO - Sample text found: a3 = ae Zz
+4 eis wen sop eae
+
+ee ees 4 ae ee web b I @ ae ge 224 fgg Pee? os 2 a a tile
+
+S= Eo = 2 3
+2025-03-18 21:50:54,532 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\bugatti_veyron.jpg
+2025-03-18 21:50:54,918 - INFO - Text detection results for bugatti_veyron.jpg: chars=129, ratio=6.221064814814815e-05, threshold=0.0002
+2025-03-18 21:50:54,918 - INFO - Sample text found: See, a oe
+Ss Saat Be y. ete sees So a cae ero ee ait fica vile . eee rs oo = ee. a ie .
+es a pew eee
+2025-03-18 21:50:54,930 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\cadillac_xts_royale.jpg
+2025-03-18 21:50:55,306 - INFO - Text detection results for cadillac_xts_royale.jpg: chars=60, ratio=2.8935185185185186e-05, threshold=0.0002
+2025-03-18 21:50:55,306 - INFO - Sample text found: Se Ce
+
+2. hovel snip pert
+
+Sian aoe
+
+ea SS Gg gee i ae er gs Regge ait Lt ee 2S
+a Pp -
+2025-03-18 21:50:55,337 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\cars_contact.jpg
+2025-03-18 21:50:55,931 - INFO - Text detection results for cars_contact.jpg: chars=229, ratio=9.015180146132527e-05, threshold=0.0002
+2025-03-18 21:50:55,931 - INFO - Sample text found: i ti a cee ere . = ee aie 3 iy
+ee S s eens ed,
+a3 nen a ooeate.peeeetemaat)k= ae r ih = =t,) aod
+Spo
+2025-03-18 21:50:55,933 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\Circle_Cars.png
+2025-03-18 21:50:56,056 - INFO - Text detection results for Circle_Cars.png: chars=0, ratio=0.0, threshold=0.0002
+2025-03-18 21:50:56,056 - INFO - Sample text found: 
+2025-03-18 21:50:56,057 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\Circle_Cars_400x400.png
+2025-03-18 21:50:56,168 - INFO - Text detection results for Circle_Cars_400x400.png: chars=0, ratio=0.0, threshold=0.0002
+2025-03-18 21:50:56,168 - INFO - Sample text found: 
+2025-03-18 21:50:56,170 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\Circle_Cars_w.png
+2025-03-18 21:50:56,299 - INFO - Text detection results for Circle_Cars_w.png: chars=5, ratio=1.9061779226473e-05, threshold=0.0002
+2025-03-18 21:50:56,300 - INFO - Sample text found: Sligo
+2025-03-18 21:50:56,311 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\ferrari_f12_tdf.jpg
+2025-03-18 21:50:56,762 - INFO - Text detection results for ferrari_f12_tdf.jpg: chars=140, ratio=6.751543209876543e-05, threshold=0.0002
+2025-03-18 21:50:56,762 - INFO - Sample text found: .
+
+SAgeSisen FeswreeiFta,
+
+eS es Nicene *
+Seat, geeie
+S2eeeeeeietcieetl nay RmyBeeOPgS
+PaaeGiuahPADT
+2025-03-18 21:50:56,774 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\ferrari_gtc4_lusso.jpg
+2025-03-18 21:50:57,080 - INFO - Text detection results for ferrari_gtc4_lusso.jpg: chars=38, ratio=1.8325617283950617e-05, threshold=0.0002
+2025-03-18 21:50:57,080 - INFO - Sample text found: =. Gs a Bits Wire Pigsat
+= S ase Sesoue&e SS in ET
+2025-03-18 21:50:57,093 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\ferrari_laferrari.jpg
+2025-03-18 21:50:57,559 - INFO - Text detection results for ferrari_laferrari.jpg: chars=145, ratio=6.99266975308642e-05, threshold=0.0002
+2025-03-18 21:50:57,559 - INFO - Sample text found: * SSeS BereSetee- oS ie ZLB
+Sea eemeteeeelapaetPoe ile Hite lig
+z oer.(-a OS Gamo E = BIN a? oe os S
+2025-03-18 21:50:57,631 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\home_audi.jpg
+2025-03-18 21:50:58,999 - INFO - Text detection results for home_audi.jpg: chars=669, ratio=0.00012098524305555556, threshold=0.0002
+2025-03-18 21:50:58,999 - INFO - Sample text found: - zs reas a = ar Ree e se a eid ee a he * a 64h
+" a eae 3 a x a
+ee 3 eye yoo tee. Meo , ar se A fae
+2025-03-18 21:50:59,035 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\home_bentley.jpg
+2025-03-18 21:50:59,394 - INFO - Text detection results for home_bentley.jpg: chars=53, ratio=1.3802083333333333e-05, threshold=0.0002
+2025-03-18 21:50:59,394 - INFO - Sample text found: cd
+vi Wa q)ee ed a j Yo N
+i Gun suit i N i
+Hea Nasaceneme eee a oo Do SS df
+2025-03-18 21:50:59,395 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\images.jpg
+2025-03-18 21:50:59,547 - INFO - Text detection results for images.jpg: chars=57, ratio=0.0011326378539493294, threshold=0.0002
+2025-03-18 21:50:59,547 - INFO - Sample text found: oe ante eee
+ste,,h,OeOeb,o,6
+5agHia.,n,Mey,?
+%,he,hao,*o,Oy,ee
+2025-03-18 21:50:59,547 - INFO - Moved images.jpg to C:/Users/Kana/Desktop/test Bilder Text\images.jpg
+2025-03-18 21:50:59,574 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\kana2.jpg
+2025-03-18 21:50:59,909 - INFO - Text detection results for kana2.jpg: chars=94, ratio=7.712029535432263e-05, threshold=0.0002
+2025-03-18 21:50:59,910 - INFO - Sample text found: ee AAA ee lAhha* L
+1FOSQ011I LLL).
+Fens
+= KeaPa,(AaeaN, i coAf
+a BeePljm,VdPAY es ce
+a lau a ia Ae R
+2025-03-18 21:57:39,396 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\1images.jpg
+2025-03-18 21:57:39,557 - INFO - Text detection results for 1images.jpg: chars=34, ratio=0.0006724417546774258, threshold=0.00025
+2025-03-18 21:57:39,557 - INFO - Sample text found: i.e
+&) p,
+Aa 1
+NY 8)
+4 AMeoTenserrWeleen
+S.
+2025-03-18 21:57:39,558 - INFO - Moved 1images.jpg to C:/Users/Kana/Desktop/test Bilder Text\1images.jpg
+2025-03-18 21:57:39,559 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\2Unbenannt.png
+2025-03-18 21:57:39,725 - INFO - Text detection results for 2Unbenannt.png: chars=80, ratio=0.001589825119236884, threshold=0.00025
+2025-03-18 21:57:39,725 - INFO - Sample text found: oBezeSemanticensis
+SeneMofaLarce
+resuksins2SeQRCHiis=
+voreotnteSdattoitsinfornation
+2025-03-18 21:57:39,726 - INFO - Moved 2Unbenannt.png to C:/Users/Kana/Desktop/test Bilder Text\2Unbenannt.png
+2025-03-18 21:57:39,739 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\bugatti_la_voiture_noire.jpg
+2025-03-18 21:57:40,136 - INFO - Text detection results for bugatti_la_voiture_noire.jpg: chars=94, ratio=4.533179012345679e-05, threshold=0.00025
+2025-03-18 21:57:40,136 - INFO - Sample text found: a3 = ae Zz
+4 eis wen sop eae
+
+ee ees 4 ae ee web b I @ ae ge 224 fgg Pee? os 2 a a tile
+
+S= Eo = 2 3
+2025-03-18 21:57:40,148 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\bugatti_veyron.jpg
+2025-03-18 21:57:40,566 - INFO - Text detection results for bugatti_veyron.jpg: chars=129, ratio=6.221064814814815e-05, threshold=0.00025
+2025-03-18 21:57:40,566 - INFO - Sample text found: See, a oe
+Ss Saat Be y. ete sees So a cae ero ee ait fica vile . eee rs oo = ee. a ie .
+es a pew eee
+2025-03-18 21:57:40,580 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\cadillac_xts_royale.jpg
+2025-03-18 21:57:40,980 - INFO - Text detection results for cadillac_xts_royale.jpg: chars=60, ratio=2.8935185185185186e-05, threshold=0.00025
+2025-03-18 21:57:40,981 - INFO - Sample text found: Se Ce
+
+2. hovel snip pert
+
+Sian aoe
+
+ea SS Gg gee i ae er gs Regge ait Lt ee 2S
+a Pp -
+2025-03-18 21:57:41,014 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\cars_contact.jpg
+2025-03-18 21:57:41,651 - INFO - Text detection results for cars_contact.jpg: chars=229, ratio=9.015180146132527e-05, threshold=0.00025
+2025-03-18 21:57:41,651 - INFO - Sample text found: i ti a cee ere . = ee aie 3 iy
+ee S s eens ed,
+a3 nen a ooeate.peeeetemaat)k= ae r ih = =t,) aod
+Spo
+2025-03-18 21:57:41,654 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\Circle_Cars.png
+2025-03-18 21:57:41,786 - INFO - Text detection results for Circle_Cars.png: chars=0, ratio=0.0, threshold=0.00025
+2025-03-18 21:57:41,786 - INFO - Sample text found: 
+2025-03-18 21:57:41,787 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\Circle_Cars_400x400.png
+2025-03-18 21:57:41,916 - INFO - Text detection results for Circle_Cars_400x400.png: chars=0, ratio=0.0, threshold=0.00025
+2025-03-18 21:57:41,916 - INFO - Sample text found: 
+2025-03-18 21:57:41,918 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\Circle_Cars_w.png
+2025-03-18 21:57:42,057 - INFO - Text detection results for Circle_Cars_w.png: chars=5, ratio=1.9061779226473e-05, threshold=0.00025
+2025-03-18 21:57:42,057 - INFO - Sample text found: Sligo
+2025-03-18 21:57:42,070 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\ferrari_f12_tdf.jpg
+2025-03-18 21:57:42,567 - INFO - Text detection results for ferrari_f12_tdf.jpg: chars=140, ratio=6.751543209876543e-05, threshold=0.00025
+2025-03-18 21:57:42,567 - INFO - Sample text found: .
+
+SAgeSisen FeswreeiFta,
+
+eS es Nicene *
+Seat, geeie
+S2eeeeeeietcieetl nay RmyBeeOPgS
+PaaeGiuahPADT
+2025-03-18 21:57:42,580 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\ferrari_gtc4_lusso.jpg
+2025-03-18 21:57:42,920 - INFO - Text detection results for ferrari_gtc4_lusso.jpg: chars=38, ratio=1.8325617283950617e-05, threshold=0.00025
+2025-03-18 21:57:42,920 - INFO - Sample text found: =. Gs a Bits Wire Pigsat
+= S ase Sesoue&e SS in ET
+2025-03-18 21:57:42,933 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\ferrari_laferrari.jpg
+2025-03-18 21:57:43,459 - INFO - Text detection results for ferrari_laferrari.jpg: chars=145, ratio=6.99266975308642e-05, threshold=0.00025
+2025-03-18 21:57:43,459 - INFO - Sample text found: * SSeS BereSetee- oS ie ZLB
+Sea eemeteeeelapaetPoe ile Hite lig
+z oer.(-a OS Gamo E = BIN a? oe os S
+2025-03-18 21:57:43,538 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\home_audi.jpg
+2025-03-18 21:57:45,023 - INFO - Text detection results for home_audi.jpg: chars=669, ratio=0.00012098524305555556, threshold=0.00025
+2025-03-18 21:57:45,024 - INFO - Sample text found: - zs reas a = ar Ree e se a eid ee a he * a 64h
+" a eae 3 a x a
+ee 3 eye yoo tee. Meo , ar se A fae
+2025-03-18 21:57:45,060 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\home_bentley.jpg
+2025-03-18 21:57:45,455 - INFO - Text detection results for home_bentley.jpg: chars=53, ratio=1.3802083333333333e-05, threshold=0.00025
+2025-03-18 21:57:45,455 - INFO - Sample text found: cd
+vi Wa q)ee ed a j Yo N
+i Gun suit i N i
+Hea Nasaceneme eee a oo Do SS df
+2025-03-18 21:57:45,456 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\images.jpg
+2025-03-18 21:57:45,623 - INFO - Text detection results for images.jpg: chars=57, ratio=0.0011326378539493294, threshold=0.00025
+2025-03-18 21:57:45,623 - INFO - Sample text found: oe ante eee
+ste,,h,OeOeb,o,6
+5agHia.,n,Mey,?
+%,he,hao,*o,Oy,ee
+2025-03-18 21:57:45,623 - INFO - Moved images.jpg to C:/Users/Kana/Desktop/test Bilder Text\images.jpg
+2025-03-18 21:57:45,652 - INFO - Attempting text detection on C:/Users/Kana/Desktop/test Bilder\kana2.jpg
+2025-03-18 21:57:46,014 - INFO - Text detection results for kana2.jpg: chars=94, ratio=7.712029535432263e-05, threshold=0.00025
+2025-03-18 21:57:46,014 - INFO - Sample text found: ee AAA ee lAhha* L
+1FOSQ011I LLL).
+Fens
+= KeaPa,(AaeaN, i coAf
+a BeePljm,VdPAY es ce
+a lau a ia Ae R

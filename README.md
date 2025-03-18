@@ -1,4 +1,4 @@
-# Text Image Sorter
+# Kana's Text Image Sorter
 
 Ein Programm zum Identifizieren und Sortieren von Bildern, die Text enthalten.
 
@@ -17,10 +17,10 @@ Ein Programm zum Identifizieren und Sortieren von Bildern, die Text enthalten.
 ## Funktionen
 
 - Text-Erkennung in Bildern mit Tesseract OCR
-- Unterstützung für deutsche und englische Texte
+- Numerische Fortschrittsanzeige (X/Y Bilder)
 - Anpassbarer Erkennungsschwellenwert
-- Vorschau der Bilder während des Sortierprozesses
-- Dunkles Erscheinungsbild
+- Optionale Vorschau der Bilder während des Sortierprozesses
+- Dunkles Erscheinungsbild mit lilafarbenen Akzenten
 
 ## Anforderungen
 

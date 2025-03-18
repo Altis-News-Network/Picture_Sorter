@@ -10,18 +10,56 @@ from PyQt5.QtGui import QPixmap, QFont, QPalette, QColor
 import pytesseract
 from PIL import Image
 
-# Configure logging
+# Configure logging - start with disabled state
 logging.basicConfig(
     filename='text_image_sorter_gui.log',
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 
+# Create a dummy logger that does nothing when logging is disabled
+class NullHandler(logging.Handler):
+    def emit(self, record):
+        pass
+
+# Global logging state
+logging_enabled = True
+
+def toggle_logging(enabled):
+    global logging_enabled
+    logging_enabled = enabled
+    
+    # Remove all handlers
+    for handler in logging.root.handlers[:]:
+        logging.root.removeHandler(handler)
+    
+    if enabled:
+        # Add file handler when enabled
+        file_handler = logging.FileHandler('text_image_sorter_gui.log')
+        file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+        logging.root.addHandler(file_handler)
+    else:
+        # Add null handler when disabled
+        logging.root.addHandler(NullHandler())
+
+# Custom logger function that respects the enabled state
+def log_info(message):
+    if logging_enabled:
+        logging.info(message)
+
+def log_error(message):
+    if logging_enabled:
+        logging.error(message)
+
+# Initialize logging state
+toggle_logging(logging_enabled)
+
 class ImageProcessorThread(QThread):
     progress_updated = pyqtSignal(int)
     status_updated = pyqtSignal(str)
     image_preview = pyqtSignal(str)
     processing_finished = pyqtSignal()
+    progress_count_updated = pyqtSignal(int, int)  # Signal für aktuelle/gesamte Bildanzahl
     
     def __init__(self, input_dir, output_dir, threshold, tesseract_path=None, preview=True):
         super().__init__()
@@ -58,6 +96,7 @@ class ImageProcessorThread(QThread):
                 # Update progress
                 progress = int((i / total_files) * 100)
                 self.progress_updated.emit(progress)
+                self.progress_count_updated.emit(i + 1, total_files)  # Aktualisiere Bildzähler
                 
                 # Get filename for status updates
                 filename = os.path.basename(image_path)
@@ -75,7 +114,7 @@ class ImageProcessorThread(QThread):
                     output_path = os.path.join(self.output_dir, filename)
                     shutil.move(image_path, output_path)
                     self.status_updated.emit(f"Moved {filename} (contains text)")
-                    logging.info(f"Moved {filename} to {output_path}")
+                    log_info(f"Moved {filename} to {output_path}")
             
             self.progress_updated.emit(100)
             self.status_updated.emit("Processing complete")
@@ -83,7 +122,7 @@ class ImageProcessorThread(QThread):
             
         except Exception as e:
             self.status_updated.emit(f"Error: {str(e)}")
-            logging.error(f"Error during processing: {str(e)}")
+            log_error(f"Error during processing: {str(e)}")
             self.processing_finished.emit()
     
     def detect_text(self, image_path):
@@ -91,8 +130,15 @@ class ImageProcessorThread(QThread):
             # Open image and convert to grayscale for better OCR
             img = Image.open(image_path).convert('L')
             
-            # Use Tesseract to extract text with both German and English language support
-            text = pytesseract.image_to_string(img, lang='deu+eng')
+            # Log attempt to detect text
+            log_info(f"Attempting text detection on {image_path}")
+            
+            # Configure Tesseract for better text detection
+            # Use PSM 6 (Assume a single uniform block of text) for better results with small text
+            config = '--psm 6 --oem 3 -c tessedit_do_invert=0 -c tessedit_char_whitelist="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,!?@#$%&*()-+="'
+            
+            # Use Tesseract to extract text
+            text = pytesseract.image_to_string(img, config=config)
             
             # Check if meaningful text was found based on threshold
             # Count non-whitespace characters
@@ -102,11 +148,15 @@ class ImageProcessorThread(QThread):
             # Calculate text density ratio
             text_ratio = text_content / image_size if image_size > 0 else 0
             
+            # Log detection results
+            log_info(f"Text detection results for {os.path.basename(image_path)}: chars={text_content}, ratio={text_ratio}, threshold={self.threshold}")
+            log_info(f"Sample text found: {text[:100].strip()}")
+            
             # Return True if text ratio is above threshold
             return text_ratio > self.threshold
             
         except Exception as e:
-            logging.error(f"Error detecting text in {image_path}: {str(e)}")
+            log_error(f"Error detecting text in {image_path}: {str(e)}")
             return False
     
     def stop(self):
@@ -120,7 +170,7 @@ class TextImageSorterGUI(QMainWindow):
         
     def initUI(self):
         # Set window properties
-        self.setWindowTitle('Text Image Sorter')
+        self.setWindowTitle('Kana\'s Text Image Sorter')
         self.setGeometry(100, 100, 800, 600)
         self.setStyleSheet("background-color: #2D2D30; color: #E0E0E0;")
         
@@ -173,12 +223,12 @@ class TextImageSorterGUI(QMainWindow):
         # Threshold controls section
         threshold_layout = QHBoxLayout()
         self.threshold_label = QLabel("Text Detection Threshold:")
-        self.threshold_value_label = QLabel("0.020")
+        self.threshold_value_label = QLabel("0.00025")
         self.threshold_value_label.setMinimumWidth(60)
         
         self.threshold_slider = QSlider(Qt.Horizontal)
-        self.threshold_slider.setRange(1, 200)  # From 0.001 to 0.2
-        self.threshold_slider.setValue(20)      # Default 0.02
+        self.threshold_slider.setRange(1, 100)  # From 0.00001 to 0.001
+        self.threshold_slider.setValue(25)      # Default 0.00025
         self.threshold_slider.valueChanged.connect(self.update_threshold_value)
         
         fine_tune_layout = QHBoxLayout()
@@ -204,15 +254,36 @@ class TextImageSorterGUI(QMainWindow):
         main_layout.addLayout(threshold_layout)
         main_layout.addLayout(fine_tune_layout)
         
-        # Preview checkbox
-        self.preview_checkbox = QCheckBox("Preview images before moving")
-        self.preview_checkbox.setChecked(True)
-        main_layout.addWidget(self.preview_checkbox)
+        # Preview and logging checkboxes
+        checkbox_layout = QHBoxLayout()
         
-        # Progress bar
+        self.preview_checkbox = QCheckBox("Preview images before moving")
+        self.preview_checkbox.setChecked(False)  # Standardmäßig deaktiviert
+        
+        self.logging_checkbox = QCheckBox("Enable logging")
+        self.logging_checkbox.setChecked(True)  # Standardmäßig aktiviert
+        self.logging_checkbox.clicked.connect(self.toggle_logging)
+        
+        checkbox_layout.addWidget(self.preview_checkbox)
+        checkbox_layout.addStretch()
+        checkbox_layout.addWidget(self.logging_checkbox)
+        
+        main_layout.addLayout(checkbox_layout)
+        
+        # Progress bar and counter
+        progress_layout = QHBoxLayout()
+        
         self.progress_bar = QProgressBar()
         self.progress_bar.setValue(0)
-        main_layout.addWidget(self.progress_bar)
+        
+        self.progress_counter = QLabel("0/0")
+        self.progress_counter.setMinimumWidth(80)
+        self.progress_counter.setAlignment(Qt.AlignRight | Qt.AlignVCenter)
+        
+        progress_layout.addWidget(self.progress_bar)
+        progress_layout.addWidget(self.progress_counter)
+        
+        main_layout.addLayout(progress_layout)
         
         # Status label
         self.status_label = QLabel("Ready")
@@ -249,46 +320,62 @@ class TextImageSorterGUI(QMainWindow):
     
     def apply_styles(self):
         # Apply styles to buttons and controls
-        button_style = """
-            QPushButton {
-                background-color: #0078D7;
+        purple_accent = "#691868"  # Neue Lila Akzentfarbe
+        
+        button_style = f"""
+            QPushButton {{
+                background-color: {purple_accent};
                 color: white;
                 border: none;
                 padding: 5px;
                 min-height: 25px;
                 border-radius: 3px;
-            }
-            QPushButton:hover {
-                background-color: #1C91EA;
-            }
-            QPushButton:pressed {
-                background-color: #0053A6;
-            }
-            QPushButton:disabled {
+            }}
+            QPushButton:hover {{
+                background-color: #8A2089;
+            }}
+            QPushButton:pressed {{
+                background-color: #4A1248;
+            }}
+            QPushButton:disabled {{
                 background-color: #666;
-            }
+            }}
         """
         
-        slider_style = """
-            QSlider::groove:horizontal {
+        slider_style = f"""
+            QSlider::groove:horizontal {{
                 border: 1px solid #999999;
                 height: 8px;
                 background: #3D3D3D;
                 margin: 2px 0;
                 border-radius: 4px;
-            }
+            }}
 
-            QSlider::handle:horizontal {
-                background: #0078D7;
+            QSlider::handle:horizontal {{
+                background: {purple_accent};
                 border: 1px solid #5c5c5c;
                 width: 18px;
                 margin: -2px 0;
                 border-radius: 4px;
-            }
+            }}
             
-            QSlider::handle:horizontal:hover {
-                background: #1C91EA;
-            }
+            QSlider::handle:horizontal:hover {{
+                background: #8A2089;
+            }}
+        """
+        
+        progress_style = f"""
+            QProgressBar {{
+                border: 1px solid #666;
+                border-radius: 3px;
+                text-align: center;
+                background-color: #2D2D30;
+            }}
+            
+            QProgressBar::chunk {{
+                background-color: {purple_accent};
+                width: 1px;
+            }}
         """
         
         for btn in self.findChildren(QPushButton):
@@ -296,6 +383,7 @@ class TextImageSorterGUI(QMainWindow):
             btn.setMinimumWidth(80)
         
         self.threshold_slider.setStyleSheet(slider_style)
+        self.progress_bar.setStyleSheet(progress_style)
         
     def select_input_dir(self):
         directory = QFileDialog.getExistingDirectory(self, "Select Input Directory")
@@ -314,8 +402,8 @@ class TextImageSorterGUI(QMainWindow):
             self.tesseract_edit.setText(file)
             
     def update_threshold_value(self):
-        threshold = self.threshold_slider.value() / 1000
-        self.threshold_value_label.setText(f"{threshold:.3f}")
+        threshold = self.threshold_slider.value() / 100000  # Much lower threshold range
+        self.threshold_value_label.setText(f"{threshold:.5f}")
         
     def fine_tune(self, amount):
         current = self.threshold_slider.value()
@@ -351,6 +439,7 @@ class TextImageSorterGUI(QMainWindow):
         self.processor_thread.status_updated.connect(self.status_label.setText)
         self.processor_thread.image_preview.connect(self.update_preview)
         self.processor_thread.processing_finished.connect(self.processing_complete)
+        self.processor_thread.progress_count_updated.connect(self.update_progress_counter)
         
         # Start processing
         self.processor_thread.start()
@@ -367,6 +456,9 @@ class TextImageSorterGUI(QMainWindow):
         self.start_button.setEnabled(True)
         self.stop_button.setEnabled(False)
         
+    def toggle_logging(self, checked):
+        toggle_logging(checked)
+        
     def update_preview(self, image_path):
         try:
             pixmap = QPixmap(image_path)
@@ -377,7 +469,10 @@ class TextImageSorterGUI(QMainWindow):
                                       Qt.SmoothTransformation)
                 self.image_preview.setPixmap(pixmap)
         except Exception as e:
-            logging.error(f"Error updating preview: {str(e)}")
+            log_error(f"Error updating preview: {str(e)}")
+    
+    def update_progress_counter(self, current, total):
+        self.progress_counter.setText(f"{current}/{total}")
 
 def apply_dark_theme(app):
     # Set application-wide dark theme
