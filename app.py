@@ -4,11 +4,14 @@ import logging
 import shutil
 from PyQt5.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, 
                            QPushButton, QLabel, QFileDialog, QSlider, QProgressBar, 
-                           QCheckBox, QMessageBox, QLineEdit, QGridLayout, QSplitter)
-from PyQt5.QtCore import Qt, QThread, pyqtSignal
+                           QCheckBox, QMessageBox, QLineEdit, QGridLayout, QSplitter,
+                           QSpinBox)
+from PyQt5.QtCore import Qt, QThread, pyqtSignal, QMutex
 from PyQt5.QtGui import QPixmap, QFont, QPalette, QColor
 import pytesseract
 from PIL import Image
+import concurrent.futures
+import multiprocessing
 
 # Configure logging - start with disabled state
 logging.basicConfig(
@@ -23,7 +26,7 @@ class NullHandler(logging.Handler):
         pass
 
 # Global logging state
-logging_enabled = True
+logging_enabled = False  # Standardmäßig deaktiviert
 
 def toggle_logging(enabled):
     global logging_enabled
@@ -61,17 +64,66 @@ class ImageProcessorThread(QThread):
     processing_finished = pyqtSignal()
     progress_count_updated = pyqtSignal(int, int)  # Signal für aktuelle/gesamte Bildanzahl
     
-    def __init__(self, input_dir, output_dir, threshold, tesseract_path=None, preview=True):
+    def __init__(self, input_dir, output_dir, threshold, tesseract_path=None, preview=True, parallel=True, workers=2):
         super().__init__()
         self.input_dir = input_dir
         self.output_dir = output_dir
         self.threshold = threshold
         self.preview = preview
         self.is_running = True
+        self.parallel = parallel
+        self.workers = workers if parallel else 1
+        self.mutex = QMutex()  # Für thread-sichere Operationen
+        self.processed_count = 0
         
         # Configure Tesseract path if provided
         if tesseract_path and os.path.exists(tesseract_path):
             pytesseract.pytesseract.tesseract_cmd = tesseract_path
+            
+    def process_image(self, image_data):
+        """Prozessiert ein einzelnes Bild in einem Worker-Thread"""
+        if not self.is_running:
+            return None, False
+            
+        image_path, index, total_files = image_data
+        
+        # Get filename for status updates
+        filename = os.path.basename(image_path)
+        self.status_updated.emit(f"Processing {filename}")
+        
+        # Send image for preview if enabled
+        if self.preview:
+            self.image_preview.emit(image_path)
+        
+        # Detect text
+        try:
+            has_text = self.detect_text(image_path)
+            
+            if has_text:
+                # Thread-sicheres Verschieben der Datei
+                self.mutex.lock()
+                try:
+                    output_path = os.path.join(self.output_dir, filename)
+                    shutil.move(image_path, output_path)
+                    log_info(f"Moved {filename} to {output_path}")
+                    self.status_updated.emit(f"Moved {filename} (contains text)")
+                finally:
+                    self.mutex.unlock()
+        except Exception as e:
+            log_error(f"Error processing image {filename}: {str(e)}")
+            has_text = False
+            
+        # Thread-sichere Fortschrittsaktualisierung
+        self.mutex.lock()
+        try:
+            self.processed_count += 1
+            progress = int((self.processed_count / total_files) * 100)
+            self.progress_updated.emit(progress)
+            self.progress_count_updated.emit(self.processed_count, total_files)
+        finally:
+            self.mutex.unlock()
+            
+        return image_path, has_text
             
     def run(self):
         try:
@@ -87,37 +139,48 @@ class ImageProcessorThread(QThread):
                 self.status_updated.emit("No image files found in input directory")
                 self.processing_finished.emit()
                 return
-                
-            for i, image_path in enumerate(image_files):
-                if not self.is_running:
-                    self.status_updated.emit("Processing stopped")
-                    break
-                
-                # Update progress
-                progress = int((i / total_files) * 100)
-                self.progress_updated.emit(progress)
-                self.progress_count_updated.emit(i + 1, total_files)  # Aktualisiere Bildzähler
-                
-                # Get filename for status updates
-                filename = os.path.basename(image_path)
-                self.status_updated.emit(f"Processing {filename} ({i+1}/{total_files})")
-                
-                # Send image for preview if enabled
-                if self.preview:
-                    self.image_preview.emit(image_path)
-                
-                # Detect text
-                has_text = self.detect_text(image_path)
-                
-                if has_text:
-                    # Move file to output directory if it contains text
-                    output_path = os.path.join(self.output_dir, filename)
-                    shutil.move(image_path, output_path)
-                    self.status_updated.emit(f"Moved {filename} (contains text)")
-                    log_info(f"Moved {filename} to {output_path}")
             
-            self.progress_updated.emit(100)
-            self.status_updated.emit("Processing complete")
+            # Reset counter    
+            self.processed_count = 0
+            
+            # Bereite Daten für parallele Verarbeitung vor
+            image_data = [(image_path, i, total_files) for i, image_path in enumerate(image_files)]
+            
+            if self.parallel and total_files > 1:
+                # Parallele Verarbeitung
+                log_info(f"Starting parallel processing with {self.workers} workers")
+                self.status_updated.emit(f"Processing with {self.workers} parallel workers...")
+                
+                with concurrent.futures.ThreadPoolExecutor(max_workers=self.workers) as executor:
+                    futures = [executor.submit(self.process_image, data) for data in image_data]
+                    
+                    # Überwachung der Ausführung für vorzeitigen Abbruch
+                    while futures and self.is_running:
+                        # Warte auf den nächsten abgeschlossenen Thread
+                        done, futures = concurrent.futures.wait(
+                            futures, timeout=0.5, 
+                            return_when=concurrent.futures.FIRST_COMPLETED
+                        )
+                        
+                        if not self.is_running:
+                            executor.shutdown(wait=False)
+                            self.status_updated.emit("Processing stopped")
+                            break
+            else:
+                # Sequentielle Verarbeitung
+                log_info("Starting sequential processing")
+                for data in image_data:
+                    if not self.is_running:
+                        self.status_updated.emit("Processing stopped")
+                        break
+                    self.process_image(data)
+            
+            # Nur 100% anzeigen, wenn alle Dateien verarbeitet wurden
+            if self.is_running:
+                self.progress_updated.emit(100)
+                self.progress_count_updated.emit(total_files, total_files)
+                self.status_updated.emit("Processing complete")
+            
             self.processing_finished.emit()
             
         except Exception as e:
@@ -254,6 +317,34 @@ class TextImageSorterGUI(QMainWindow):
         main_layout.addLayout(threshold_layout)
         main_layout.addLayout(fine_tune_layout)
         
+        # Parallel processing controls
+        parallel_layout = QHBoxLayout()
+        
+        self.parallel_checkbox = QCheckBox("Enable Parallel Processing")
+        self.parallel_checkbox.setChecked(True)  # Standardmäßig aktiviert
+        self.parallel_checkbox.stateChanged.connect(self.toggle_worker_controls)
+        
+        worker_layout = QHBoxLayout()
+        self.worker_label = QLabel("Worker Threads:")
+        
+        self.worker_spinner = QSpinBox()
+        # Setze Worker-Anzahl auf CPU-Kerne (max 8, min 2)
+        cpu_count = max(2, min(multiprocessing.cpu_count(), 8))
+        self.worker_spinner.setMinimum(1)
+        self.worker_spinner.setMaximum(cpu_count * 2)  # Erlaube bis zu doppelte Anzahl der CPU-Kerne
+        self.worker_spinner.setValue(cpu_count)
+        self.worker_spinner.setEnabled(True)
+        self.worker_spinner.setToolTip(f"Recommended: {cpu_count} (number of CPU cores)")
+        
+        worker_layout.addWidget(self.worker_label)
+        worker_layout.addWidget(self.worker_spinner)
+        
+        parallel_layout.addWidget(self.parallel_checkbox)
+        parallel_layout.addStretch()
+        parallel_layout.addLayout(worker_layout)
+        
+        main_layout.addLayout(parallel_layout)
+        
         # Preview and logging checkboxes
         checkbox_layout = QHBoxLayout()
         
@@ -261,7 +352,7 @@ class TextImageSorterGUI(QMainWindow):
         self.preview_checkbox.setChecked(False)  # Standardmäßig deaktiviert
         
         self.logging_checkbox = QCheckBox("Enable logging")
-        self.logging_checkbox.setChecked(True)  # Standardmäßig aktiviert
+        self.logging_checkbox.setChecked(False)  # Standardmäßig deaktiviert
         self.logging_checkbox.clicked.connect(self.toggle_logging)
         
         checkbox_layout.addWidget(self.preview_checkbox)
@@ -409,12 +500,19 @@ class TextImageSorterGUI(QMainWindow):
         current = self.threshold_slider.value()
         self.threshold_slider.setValue(current + amount)
         
+    def toggle_worker_controls(self, state):
+        """Aktiviere/Deaktiviere Worker-Controls basierend auf Checkbox-Zustand"""
+        self.worker_spinner.setEnabled(state == Qt.Checked)
+        self.worker_label.setEnabled(state == Qt.Checked)
+    
     def start_processing(self):
         input_dir = self.input_dir_edit.text()
         output_dir = self.output_dir_edit.text()
         tesseract_path = self.tesseract_edit.text()
         threshold = float(self.threshold_value_label.text())
         preview_enabled = self.preview_checkbox.isChecked()
+        parallel_enabled = self.parallel_checkbox.isChecked()
+        worker_count = self.worker_spinner.value() if parallel_enabled else 1
         
         if not input_dir or not os.path.isdir(input_dir):
             QMessageBox.warning(self, "Warning", "Please select a valid input directory.")
@@ -431,7 +529,8 @@ class TextImageSorterGUI(QMainWindow):
         
         # Create and start the processor thread
         self.processor_thread = ImageProcessorThread(
-            input_dir, output_dir, threshold, tesseract_path, preview_enabled
+            input_dir, output_dir, threshold, tesseract_path, preview_enabled,
+            parallel_enabled, worker_count
         )
         
         # Connect signals
