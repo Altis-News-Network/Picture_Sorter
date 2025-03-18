@@ -6,10 +6,18 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Virtual environment
+# Virtual environment and portable Python
 venv/
+python_embed/
+portable_python/
 .env
 .venv
+
+# Temporary files
+temp/
+*.tmp
+*.bak
+*.swp
 
 # Distribution / packaging
 dist/
@@ -19,3 +27,11 @@ build/
 # OS specific files
 .DS_Store
 Thumbs.db
+
+# Download files
+*.zip
+*.exe
+get-pip.py
+
+# PowerShell scripts created during setup
+download_*.ps1
